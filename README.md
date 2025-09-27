@@ -3,7 +3,20 @@
 An AI-powered app that takes raw Censys host data and turns it into clear, readable summaries. Built with **FastAPI** + **React**, powered by Groq’s `llama-3.3-70b` model.
 
 ---
-## Demo
+
+## Live Demo
+
+- Frontend: [https://censys-project.vercel.app](https://censys-project.vercel.app)
+- Backend API & Docs: [https://censys-project.onrender.com/docs](https://censys-project.onrender.com/docs)
+
+### Note on Startup Time
+The backend is hosted on Render’s free tier.  
+If it has been inactive for ~15 minutes, the **first request may take up to 60 seconds** while the service spins back up.  
+After that, all requests are immediate. If you experience a delay, please wait a moment and retry.
+
+---
+
+## Picture Demo
 
 Here’s a quick look at the application in action.
 
@@ -28,6 +41,7 @@ npm install
 npm run dev  
 
 Open the app at http://localhost:3000.  
+(or http://localhost:5173 if your local dev server runs on that port).
 
 ---
 
@@ -55,7 +69,7 @@ VITE_API_BASE_URL=http://localhost:8000
 
 ### Manual Testing
 1. Run the backend and frontend as described above.  
-2. Open http://localhost:3000.  
+2. Open http://localhost:3000.  (or http://localhost:5173 if your local dev server runs on that port).
 3. Select a host IP from the dropdown.  
 4. Click "Summarize Host".  
 5. Verify that the summary includes IP, location, services, vulnerabilities, and overall risk level.  
