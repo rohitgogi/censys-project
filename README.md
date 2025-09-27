@@ -112,5 +112,6 @@ If given more time, I would:
 - Add user input validation and better error handling for robustness.  
 - Expand automated test coverage for both backend and frontend.  
 - Build a provider-agnostic backend layer to support Groq, OpenAI, or other LLMs seamlessly.  
+- Enable users to upload their own JSON datasets via the UI, which the backend would dynamically parse and summarize, rather than relying on a static file.
 
 ---
